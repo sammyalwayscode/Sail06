@@ -144,10 +144,10 @@
 
 //Operators in javascript
 
-let a = 27;
-let b = 5;
-let c = 5;
-let d = "5";
+// let a = 27;
+// let b = 5;
+// let c = 5;
+// let d = "5";
 
 // let c = a + b
 
@@ -182,11 +182,128 @@ let d = "5";
 // console.log((uniform && ID) || textbook);
 
 // Unary
-console.log(++a);
-console.log(--a);
+// console.log(++a);
+// console.log(--a);
 
 //
-let age = 45;
-let vote = age >= 18 ? "You can vote" : "You cannot vote";
+// let age = 45;
+// let vote = age >= 18 ? "You can vote" : "You cannot vote";
 
-console.log(vote);
+// console.log(vote);
+
+//Prompt and alert
+// alert("Hello Everyone");
+
+// console.error("An Error occoured");
+// console.warn("Check this well before proceeding");
+
+// console.log("Hello Everyone");
+
+// console.log(typeof age);
+
+// let newage = prompt("Enter your age");
+// let newvote = newage >= 18 ? "You can vote" : "You cannot vote";
+// alert(newvote);
+// console.log(typeof newvote);
+// // console.log(parseInt(newage));
+// console.log(typeof newage);
+
+// let a = parseInt(prompt("Enter your first number"));
+// let b = parseInt(prompt("Enter your second number"));
+
+// alert(a + b);
+
+//Conditionals
+
+//if statement
+
+// if (5 > 7) {
+//   console.log("5 is the greatest number");
+// }
+
+// if (3 < 7) {
+//   console.log("3 is greater");
+// } else {
+//   console.log("7 is greater");
+// }
+
+// let num = 5;
+// if (num > 5) {
+//   console.log("Round to 1");
+// } else if (num == 5) {
+//   console.log("Round to 1");
+// } else {
+//   console.log("round to zeor");
+// }
+
+//Template literal
+// let age = 56;
+// console.log(`The user age is ${age}`);
+
+// console.log("This is the user ${age}");
+
+// let systemName = prompt("Who are you").toLowerCase();
+
+// if (systemName === "jennifer" || systemName === "mariam") {
+//   alert("You can Enter the STEM lab");
+// } else alert("You do not have access to the STEM lab");
+
+// let userAccess = prompt("What are you wearing");
+// if (userAccess === "shoe") {
+//   alert("You can enter");
+// } else if (userAccess === "sandals") {
+//   alert("You can enter with your sandals");
+// } else if (userAccess === "injury") {
+//   alert("Sorry, you can enter now");
+// } else {
+//   alert("You cannot enter");
+// }
+
+//Write a prompt that tells a user of they are ligble to vote
+
+const userAge = parseInt(prompt("Enter your age"));
+if (userAge >= 18) {
+  alert(`Your age is ${userAge} and you can go on to vote`);
+} else if (userAge < 1) {
+  alert("Age can't be a negative value");
+} else if (isNaN(userAge)) {
+  alert("You can only enter a number");
+} else {
+  alert(`Sorry you are ${userAge} and you are not eligible to vote`);
+}
+
+//create a system that tells a user which is the greatest of two numbers
+
+const numOne = parseInt(prompt("Enter your first number"));
+const numTwo = parseInt(prompt("Enter your second number"));
+
+if (numOne > numTwo) {
+  alert(`${numOne} is greater than ${numTwo}`);
+} else if (numOne === numTwo) {
+  alert(`${numOne} is equal to ${numTwo}`);
+} else {
+  alert(`${numTwo} is greater than ${numOne}`);
+}
+
+// 1. Write a program that determines whether a given number is positive or negative.
+
+// 2. Write a program that checks if a number is even or odd.
+
+const userNumber = parseInt(prompt("Enter your number"));
+
+if (userNumber % 2 === 0) {
+  alert(`${userNumber} is an even number`);
+} else {
+  alert(`${userNumber} is an odd number`);
+}
+
+// 3. Write a program to determine the greater of three numbers.
+// 4. Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+// 5. Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+
+// Write a simple function that accepts the name of different users
+//Write a simple function that give the addition of two numbers
+
+//Write a loop that prints out all odd numbers between 1-100
+//Write a loop that prints out the 2 times multiplication table from 2x1 to 2x20
+// Write a loop that prints out the only the even numbers of the 2times multiplication table from 2 to 60 e.g 2x2=4, 2x4=8, 2x6=12
