@@ -261,49 +261,230 @@
 
 //Write a prompt that tells a user of they are ligble to vote
 
-const userAge = parseInt(prompt("Enter your age"));
-if (userAge >= 18) {
-  alert(`Your age is ${userAge} and you can go on to vote`);
-} else if (userAge < 1) {
-  alert("Age can't be a negative value");
-} else if (isNaN(userAge)) {
-  alert("You can only enter a number");
-} else {
-  alert(`Sorry you are ${userAge} and you are not eligible to vote`);
-}
+// const userAge = parseInt(prompt("Enter your age"));
+// if (userAge >= 18) {
+//   alert(`Your age is ${userAge} and you can go on to vote`);
+// } else if (userAge < 1) {
+//   alert("Age can't be a negative value");
+// } else if (isNaN(userAge)) {
+//   alert("You can only enter a number");
+// } else {
+//   alert(`Sorry you are ${userAge} and you are not eligible to vote`);
+// }
 
-//create a system that tells a user which is the greatest of two numbers
+// //create a system that tells a user which is the greatest of two numbers
 
-const numOne = parseInt(prompt("Enter your first number"));
-const numTwo = parseInt(prompt("Enter your second number"));
+// const numOne = parseInt(prompt("Enter your first number"));
+// const numTwo = parseInt(prompt("Enter your second number"));
 
-if (numOne > numTwo) {
-  alert(`${numOne} is greater than ${numTwo}`);
-} else if (numOne === numTwo) {
-  alert(`${numOne} is equal to ${numTwo}`);
-} else {
-  alert(`${numTwo} is greater than ${numOne}`);
-}
+// if (numOne > numTwo) {
+//   alert(`${numOne} is greater than ${numTwo}`);
+// } else if (numOne === numTwo) {
+//   alert(`${numOne} is equal to ${numTwo}`);
+
+//   alert(`${numTwo} is greater than ${numOne}`);
+// }
 
 // 1. Write a program that determines whether a given number is positive or negative.
 
 // 2. Write a program that checks if a number is even or odd.
 
-const userNumber = parseInt(prompt("Enter your number"));
+// const userNumber = parseInt(prompt("Enter your number"));
 
-if (userNumber % 2 === 0) {
-  alert(`${userNumber} is an even number`);
-} else {
-  alert(`${userNumber} is an odd number`);
-}
+// if (userNumber % 2 === 0) {
+//   alert(`${userNumber} is an even number`);
+// } else {
+//   alert(`${userNumber} is an odd number`);
+// }
 
 // 3. Write a program to determine the greater of three numbers.
 // 4. Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
 // 5. Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
 
-// Write a simple function that accepts the name of different users
-//Write a simple function that give the addition of two numbers
+//Loops
+// for (let a = 1; a <= 100; a++) {
+//   console.log(a);
+// }
+
+// let b = 1;
+// while (b <= 50) {
+//   console.log(b);
+//   b++;
+// }
+
+// let c = 10;
+// do {
+//   console.log(c);
+//   c++;
+// } while (c <= 20);
 
 //Write a loop that prints out all odd numbers between 1-100
+
+// for (let a = 1; a <= 100; a++) {
+//   if (a % 2 === 1) {
+//     console.log(a);
+//   }
+// }
 //Write a loop that prints out the 2 times multiplication table from 2x1 to 2x20
+
+// for (a = 1; a <= 20; a++) {
+//   let b = `2 x ${a} = ${a * 2}`;
+//   console.log(b);
+// }
+
 // Write a loop that prints out the only the even numbers of the 2times multiplication table from 2 to 60 e.g 2x2=4, 2x4=8, 2x6=12
+
+// for (a = 1; a <= 20; a++) {
+//   for (b = 1; b <= 12; b++) {
+//     let c = `${a} x ${b} = ${a * b}`;
+//     console.log(c);
+//   }
+// }
+
+//Functions
+
+// function addNum(a) {
+//   console.log(a + 2);
+// }
+
+// addNum(45);
+// addNum(73);
+
+// function addTowNum(jide, bola) {
+//   console.log(jide + bola);
+// }
+
+// addTowNum(34, 56);
+// addTowNum(364, 56);
+
+// Write a simple function that accepts the name of different users
+// Fat arrow
+// =>
+// const name = () =>{}
+// function name(){}
+
+// const userName = (yourName) => {
+//   console.log(yourName);
+// };
+
+// userName("Samuel");
+// userName("Bola");
+
+// function userName2(myName) {
+//   console.log(myName);
+// }
+
+// userName2("Irene");
+
+//Write a simple function that give the addition of two numbers
+
+// console.log("Ready");
+
+const userName = (yourName, yourAge) => {
+  return `My name is ${yourName}`;
+};
+
+// userName("", 23);
+userName("jide");
+console.log(userName("jide"));
+
+// let a = "I am happy";
+// a.slice();
+
+//Array Methods
+const myFruits = [
+  "Mango",
+  "Orange",
+  "Coconut",
+  "Pawpaw",
+  "Watermelon",
+  "Apple",
+  "Cherry",
+];
+
+// console.log(myFruits);
+// console.log(myFruits[2]);
+// myFruits.push("banana")
+// console.log(myFruits);
+// myFruits.pop()
+// console.log(myFruits);
+// myFruits.unshift("pineapple")
+// console.log(myFruits);
+// myFruits.shift()
+// console.log(myFruits);
+
+// myFruits.splice(2, 2)
+// console.log(myFruits);
+
+let num = [1, 6];
+
+// num.splice(1, 0, 2, 3)
+// console.log(num);
+
+// console.log(myFruits.concat(num));
+
+// let va = "Samuel is a BOY"
+// console.log(va.split(" "));
+// console.log(myFruits.join("-"));
+// console.log(myFruits.indexOf("Apple"));
+// console.log(myFruits.includes("Orange"));
+
+// const myStudents = [
+//   { name: "bola", age: 25, ms: "single" },
+//   { name: "irene", age: 28, ms: "married" },
+//   { name: "tife", age: 25, ms: "complicated" },
+//   { name: "mariam", age: 21, ms: "married" },
+//   { name: "chioma", age: 27, ms: "divorced" },
+//   { name: "victory", age: 25, ms: "single" },
+//   { name: "love", age: 28, ms: "married" },
+//   { name: "esther", age: 22, ms: "complicated" },
+//   { name: "grace", age: 21, ms: "divorced" },
+//   { name: "favour", age: 28, ms: "single" },
+// ];
+
+// console.log(myStudents[0].name);
+
+// myStudents.forEach((stdName, index)=>{
+//     console.log(stdName.name);
+//    // console.log(name);
+// })
+// myStudents.forEach(({name, age, ms}, index)=>{
+// console.log(stdName.name);
+// console.log(name);
+// console.log(index);
+// })
+// myStudents.forEach(({name, age, ms}, index)=>{
+//     console.log(`${name} is ${age} years old and is ${ms}`);
+// })
+
+// const names = myStudents.map((allData, index)=>{
+//     return allData.name
+// })
+
+// console.log(names);
+
+// const olderStudents = myStudents.filter((students)=>{
+//     return students.age >= 25
+// })
+
+// console.log(olderStudents);
+
+// const marriedStudents = myStudents.filter((students)=>{
+//     return students.ms === "married"
+// })
+
+// console.log(marriedStudents);
+
+// const findStudents = myStudents.find((students)=>{
+//     return students.name === "mariam"
+// })
+
+// console.log(findStudents);
+
+//DOM in Javascript
+console.log(document);
+
+const title = document.getElementById("title");
+console.log(title);
+title.textContent = "This is from the dom";
+title.style.color = "red";
