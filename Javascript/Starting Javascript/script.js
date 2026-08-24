@@ -481,10 +481,35 @@ let num = [1, 6];
 
 // console.log(findStudents);
 
+// const threeNum = (numOne, numTwo, numThree) => {
+//   const addNums = numOne + numTwo + numThree;
+//   const resultNum = Math.pow(addNums, 2);
+//   return resultNum;
+// };
+
+// console.log(threeNum(2, 5, 6));
+
 //DOM in Javascript
 console.log(document);
 
-const title = document.getElementById("title");
-console.log(title);
-title.textContent = "This is from the dom";
-title.style.color = "red";
+const myButton = document.getElementById("btn");
+// myButton.textContent = "Samuel";
+// myButton.style.backgroundColor = "red";
+// myButton.style.width = "200px";
+// myButton.style.height = "70px";
+// myButton.style.fontSize = "25px";
+
+myButton.addEventListener("click", () => {
+  // alert("This ws clicked from Jvascripr");
+  myButton.textContent = "Samuel";
+  myButton.style.backgroundColor = "red";
+  myButton.style.width = "200px";
+  myButton.style.height = "70px";
+  myButton.style.fontSize = "25px";
+});
+console.log(myButton);
+
+// const title = document.getElementById("title");
+// console.log(title);
+// title.textContent = "This is from the dom";
+// title.style.color = "red";
