@@ -1,0 +1,5 @@
+.sectionOneContainer {
+  padding: 50px 0;
+  background-color: lightgray;
+  display: flex;
+}
